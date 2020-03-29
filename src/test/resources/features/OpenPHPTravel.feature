@@ -1,5 +1,5 @@
 @smoke 
-Feature: Navigate to Flight Page 
+Feature: Smoke Testing: PHP Travels Page 
 
 Scenario: Open Hotels Menu Page 
 	Given Francis opens the PHP Travel Page 
