@@ -12,11 +12,13 @@ public class LandingPage extends PageObject {
 	 * Targets for Menu items.
 	 */
 	public static final Target FEATURE_MENU = Target.the("Features").locatedBy("//span[text()='Features']");
-	public static final Target PRODUCT_MENU = Target.the("Product").locatedBy("//span[text()='Product']");
+	public static final Target PRODUCT_MENU = Target.the("Product")
+			.locatedBy("//span/descendant::span[text()=\"Product\"]");
 	public static final Target DOCS_MENU = Target.the("Product").locatedBy("//span[text()='Docs']");
 	public static final Target HOSTING_MENU = Target.the("Product").locatedBy("//span[text()='Hosting']");
-	public static final Target COMPANxY_MENU = Target.the("Product").locatedBy("//span[text()='Company']");
-
+	public static final Target COMPANY_MENU = Target.the("Product").locatedBy("//span[text()='Company']");
+	public static final Target CLOSE_MODAL = Target.the("CloseAD")
+			.locatedBy("//div[@id='PopupSignupForm_0']/descendant::div[@class='mc-closeModal']");
 	/**
 	 * Targets for Check Pricing and Explore Demo links
 	 */

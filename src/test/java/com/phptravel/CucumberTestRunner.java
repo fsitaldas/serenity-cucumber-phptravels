@@ -7,6 +7,6 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(plugin = {
-		"pretty" }, features = "src/test/resources/features/OpenPHPTravel.feature", glue = "com.phptravel.stepsDefinition")
+		"pretty" }, features = "src/test/resources/features/pricing/pricing_services.feature", glue = "com.phptravel.stepsDefinition")
 public class CucumberTestRunner {
 }
