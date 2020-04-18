@@ -19,6 +19,7 @@ public class LandingPage extends PageObject {
 	public static final Target COMPANY_MENU = Target.the("Product").locatedBy("//span[text()='Company']");
 	public static final Target CLOSE_MODAL = Target.the("CloseAD")
 			.locatedBy("//div[@id='PopupSignupForm_0']/descendant::div[@class='mc-closeModal']");
+	
 	/**
 	 * Targets for Check Pricing and Explore Demo links
 	 */

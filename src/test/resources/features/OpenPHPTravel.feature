@@ -1,11 +1,6 @@
 @smoke 
 Feature: Smoke Testing: PHP Travels Page 
 
-Scenario: Open Hotels Menu Page 
-	Given Francis opens the PHP Travel Page 
-	When he navigates to Hotel Module 
-	Then he should see that Hotel Page is successfully loaded 
-	
 Scenario: Open Flight Page 
 	Given Francis opens the PHP Travel Page
 	When he navigates to Flights Module

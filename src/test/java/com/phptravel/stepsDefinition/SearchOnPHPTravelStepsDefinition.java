@@ -35,7 +35,7 @@ public class SearchOnPHPTravelStepsDefinition {
 		setTheStage(new OnlineCast());
 	}
 
-	@Given("(.*) opens the PHP Travel Page")
+	@Given("^(.*) opens the PHP Travel Page")
 	public void opens_the_Todo_Application(String actorName) {
 
 		theActorCalled(actorName).attemptsTo(Open.browserOn().the(LandingPage.class));

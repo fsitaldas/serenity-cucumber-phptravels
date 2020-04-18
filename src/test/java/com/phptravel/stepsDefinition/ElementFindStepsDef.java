@@ -12,18 +12,20 @@ import com.phptravel.ui.LandingPage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.ensure.Ensure;
 
 public class ElementFindStepsDef {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ElementFindStepsDef.class);
-	ElementFinder findElement;
+	static ElementFinder findElement = new ElementFinder();
 
 	@And("he click {string} link under Products")
 	public void clickProductLink(String linkText) throws IOException {
 		OnStage.withCurrentActor(Ensure.that(LandingPage.PRODUCT_MENU).isDisplayed(),
-				MoveMouse.to(LandingPage.PRODUCT_MENU), Click.on(findElement.getLinkByLabel(linkText)));
+				MoveMouse.to(LandingPage.PRODUCT_MENU),
+				Click.on(findElement.getLinkByLabel(linkText)));
 	}
 
 	@And("click '(.*)' menu")
